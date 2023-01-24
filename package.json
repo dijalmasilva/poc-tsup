@@ -1,0 +1,53 @@
+{
+  "name": "poc-tsup",
+  "version": "1.7.1",
+  "keywords": [
+    "tsup",
+    "library ui",
+    "react",
+    "typescript"
+  ],
+  "description": "Bundle TypeScript library using tsup to manager the configuration",
+  "main": "dist/index.js",
+  "module": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "author": "Dijalma Silva <dijalmacz@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.cjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "start": "tsup --watch",
+    "ladle": "ladle serve",
+    "test": "echo \"Error: no test specified\"&& exit 1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@ladle/react": "^2.4.5",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "esbuild-sass-plugin": "^2.4.5",
+    "postcss-modules": "^6.0.0",
+    "sass": "^1.57.1",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

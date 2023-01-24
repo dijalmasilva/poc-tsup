@@ -1,0 +1,68 @@
+Arguments: 
+  /Users/manoeldijalma/.nvm/versions/node/v18.12.1/bin/node /Users/manoeldijalma/.nvm/versions/node/v18.12.1/bin/yarn install
+
+PATH: 
+  /Users/manoeldijalma/.rvm/gems/ruby-2.7.5/bin:/Users/manoeldijalma/.rvm/gems/ruby-2.7.5@global/bin:/Users/manoeldijalma/.rvm/rubies/ruby-2.7.5/bin:/Users/manoeldijalma/.rbenv/shims:/Users/manoeldijalma/.nvm/versions/node/v18.12.1/bin:/Users/manoeldijalma/.local/share/zinit/polaris/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/manoeldijalma/Documents/WebStormProjects/poc-tsup/node_modules/.bin:/Users/manoeldijalma/.rvm/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/manoeldijalma/Documents/WebStormProjects/poc-tsup/package.json: Unexpected token } in JSON at position 894
+      at JSON.parse (<anonymous>)
+      at /Users/manoeldijalma/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/manoeldijalma/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/manoeldijalma/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "poc-tsup",
+    "version": "1.0.0",
+    "keywords": [
+      "tsup",
+      "library ui",
+      "react",
+      "typescript"
+    ],
+    "description": "Bundle TypeScript library using tsup to manager the configuration",
+    "main": "./dist/index.mjs",
+    "module": "./dist/index.mjs",
+    "author": "Dijalma Silva <dijalmacz@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "publishConfig": {
+      "access": "public"
+    },
+    "scripts": {
+      "build": "tsup",
+      "start": "tsup --watch",
+      "test": "echo \"Error: no test specified\"&& exit 1"
+    },
+    "exports": {
+      "default": "./dist/index.cjs",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "node": "./dist/index.cjs"
+    },
+    "type": "module",
+    "devDependencies": {
+      "@types/node": "^18.11.18",
+      "@types/react": "^18.0.27",
+      "@types/react-dom": "^18.0.10",
+      "tsup": "^6.5.0",
+      "typescript": "^4.9.4"
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

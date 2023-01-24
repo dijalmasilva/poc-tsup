@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/hooks/useHelloWorld.ts"],"names":["useHelloWorld","name","useHelloWorld_default"],"mappings":"AAAA,IAAMA,EAAiBC,GACZ,UAAUA,IAGdC,EAAQF","sourcesContent":["const useHelloWorld = (name: string) => {\n    return `Hello, ${name}`\n}\n\nexport default useHelloWorld\n"]}
